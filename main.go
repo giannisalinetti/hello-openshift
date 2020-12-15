@@ -6,7 +6,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello OpenShift")
+	fmt.Fprintf(w, "Hello OpenShift!\n")
 }
 
 func livenessProbe(w http.ResponseWriter, r *http.Request) {
