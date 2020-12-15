@@ -10,7 +10,7 @@ $ oc new-app https://github.com/giannisalinetti/hello-openshift --strategy=docke
 
 Try to inspect the build logs and demonstrate that a pure Docker build has been triggered.
 ```
-$ oc logs builds/hello-server-1 -f
+$ oc logs builds/hello-openshift-1 -f
 ```
 
 ### Maintainer
