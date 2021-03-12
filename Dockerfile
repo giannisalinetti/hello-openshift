@@ -1,8 +1,8 @@
 FROM golang:alpine AS builder
 LABEL stage=builder
 WORKDIR /hello-openshift
-COPY main.go .
-RUN CGO_ENABLED=0 GOOS=linux go build -a
+COPY go.mod main.go .
+RUN  go build 
 
 FROM alpine AS final
 WORKDIR /
